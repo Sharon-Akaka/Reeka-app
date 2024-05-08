@@ -35,8 +35,8 @@
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 400px; /* Adjust width as needed */
-  max-height: 80vh; /* Adjust the maximum height as needed */
+  width: 400px;
+  max-height: 80vh;
   overflow-y: auto;
   position: relative;
 }
@@ -94,9 +94,9 @@
   width: 100%;
 }
 .custom-checkbox input[type="checkbox"] {
-  width: 15px; /* Adjust size as needed */
-  height: 15px; /* Adjust size as needed */
-  margin-right: 10px; /* Adds space between the checkbox and the label */
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
 }
 input[type="checkbox"] {
   accent-color: #e36b37;
