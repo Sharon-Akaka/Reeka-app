@@ -1,0 +1,88 @@
+body {
+  font-family: Inter;
+  background: #fafafa;
+  justify-content: center;
+  min-height: 100vh;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  position: relative; /* Check if changing to static helps */
+}
+.App {
+  width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-spacing {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 100px;
+  align-items: start;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.image-style {
+  display: block;
+  width: 100%;
+}
+
+.default-image {
+  display: block; /* Default images shown by default */
+}
+
+.small-image {
+  display: none; /* Small images hidden by default */
+}
+.last-section-spacing {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: auto;
+  justify-content: center;
+  align-items: left;
+}
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .App {
+    box-sizing: border-box;
+    max-width: 400px;
+    padding-top: 20px;
+  }
+  .section-spacing {
+    margin: 0px;
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    grid-gap: 20px;
+  }
+
+  .default-image {
+    display: none; /* Hide default images */
+  }
+  .small-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+  }
+  #paymentResponsive {
+    padding-top: 50px;
+  }
+  .last-section-spacing {
+    align-items: center;
+  }
+  .image-style {
+    width: 100%;
+    height: auto;
+  }
+  .section-spacing,
+  .last-section-spacing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}

@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  border-top: 2px solid #ccc; /* Visible top divider line */
+  padding: 10px 20px; /* Adding some padding for better visual spacing */
+}
+
+.social-media {
+  display: flex;
+  gap: 20px; /* Ensuring that the logos are spaced equally */
+}
