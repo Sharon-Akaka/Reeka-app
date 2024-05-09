@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 90%;
   height: 388px;
   border-radius: 16px;
   background: radial-gradient(
@@ -16,7 +16,6 @@
     0px 1px 0px 0px rgba(255, 255, 255, 0.2) inset,
     0px 8px 44px 0px rgba(255, 100, 69, 0.3);
   position: relative;
-
   margin-top: 60px;
   margin-bottom: 60px;
 }

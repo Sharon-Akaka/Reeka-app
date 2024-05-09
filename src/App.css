@@ -9,10 +9,10 @@ html {
   width: 100%;
   height: 100%;
   overflow-x: hidden; /* Prevent horizontal scroll */
-  position: relative; /* Check if changing to static helps */
+  position: relative;
 }
 .App {
-  width: 1800px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -24,6 +24,8 @@ html {
   align-items: start;
   margin-bottom: 50px;
   margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .image-style {
@@ -43,8 +45,8 @@ html {
   flex-direction: column;
   width: 70%;
   height: auto;
-  justify-content: center;
-  align-items: left;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
