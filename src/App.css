@@ -48,6 +48,11 @@ html {
   margin-left: 50px;
   margin-right: 50px;
 }
+.final-section-spacing-div {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+}
+
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
   .App {
@@ -87,5 +92,8 @@ html {
     flex-direction: column;
     align-items: center;
     width: 100%;
+  }
+  .final-section-spacing-div {
+    flex: none;
   }
 }

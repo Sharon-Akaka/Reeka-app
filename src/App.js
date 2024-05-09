@@ -89,7 +89,9 @@ function App() {
           className="image-style small-image"
         />
       </div>
-      <FinalSection />
+      <div className="final-section-spacing-div">
+        <FinalSection />
+      </div>
       <Footer />
     </div>
   );
