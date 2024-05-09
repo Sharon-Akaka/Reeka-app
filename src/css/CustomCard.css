@@ -14,7 +14,7 @@
   border-radius: 9999px;
   color: #e36b37;
   background: #ffeae0;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .custom-heading {
@@ -22,7 +22,7 @@
   width: 70%;
   font-weight: 500;
   line-height: 1.5;
-  font-size: 40px;
+  font-size: 25px;
   margin: 10px 0;
 }
 
@@ -30,7 +30,7 @@
   color: #3a3a3a;
   width: 70%;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 2;
   margin-bottom: 10px;
 }
@@ -46,7 +46,7 @@
   }
   .custom-tag {
     align-self: flex-start;
-    font-size: 15px;
+    font-size: 10px;
   }
   .custom-heading {
     font-size: 20px;

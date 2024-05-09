@@ -75,6 +75,7 @@ html {
   }
   .last-section-spacing {
     align-items: center;
+    margin-left: 0px;
   }
   .image-style {
     width: 100%;
