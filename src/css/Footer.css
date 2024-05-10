@@ -3,11 +3,19 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
-  border-top: 2px solid #ccc; /* Visible top divider line */
   padding: 10px 20px;
+  background-color: white;
 }
 
 .social-media {
   display: flex;
   gap: 20px; /* Ensuring that the logos are spaced equally */
+}
+
+.footer hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #cccccc;
+  height: 1px;
+  background-color: white;
 }

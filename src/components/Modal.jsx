@@ -52,9 +52,55 @@ const Modal = ({ isOpen, close }) => {
     e.stopPropagation();
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setFormSubmitted(true);
+
+    const apiUrl = "https://api.apispreadsheets.com/data/BmnYIdO4bAGKCsIi/";
+
+    const formData = {
+      name,
+      email,
+      location,
+      phoneNumber,
+      portfolioSize,
+      tools: checkboxInputs1
+        .filter((input) => input.checked)
+        .map((input) => input.label),
+      priorities: checkboxInputs2
+        .filter((input) => input.checked)
+        .map((input) => input.label),
+    };
+
+    try {
+      const response = await fetch(apiUrl, {
+        mode: "no-cors",
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          data: {
+            Name: formData.name,
+            Email: formData.email,
+            Tools: formData.tools,
+            Location: formData.location,
+            Priorities: formData.priorities,
+            "Phone Number": formData.phoneNumber,
+            "Portfolio Size": formData.portfolioSize,
+          },
+        }),
+      });
+
+      const result = await response.json();
+      if (response.ok) {
+        setFormSubmitted(true);
+      } else {
+        throw new Error(result.error || "Failed to submit form");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   const handleCheckboxChange1 = (id) => {
